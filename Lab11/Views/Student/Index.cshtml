@@ -1,0 +1,328 @@
+@model List<Lab11.Models.StudentModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="col-6">
+        
+    </div>
+    <div class="card bg-dark text-white">
+        <div class="card-body">
+            <h3 class="card-title">Please enter the details below.</h3>
+            <div>
+                <div class="form-group col-md-5">
+                    <label>Student Name:</label>
+                    <input type="text" name="StudentName" id="StudentName" class="form-control" placeholder="Enter student name" required=""/>
+                </div>
+                <div class="form-group col-md-5">
+                    <label>Student Last Name:</label>
+                    <input type="text" name="StudentLastName" id="StudentLastName" class="form-control" placeholder="Enter student lastname" required=""/>
+                </div>
+                <div class="form-group col-md-5">
+                    <label>Student Address:</label>
+                    <input type="text" name="StudentAddress" id="StudentAddress" class="form-control" placeholder="Enter student address" required=""/>
+                </div>
+                <div class="form-group col-md-5">
+                    <label>Student Code:</label>
+                    <input type="text" name="StudentCode" id="StudentCode" class="form-control" placeholder="Enter student code" required=""/>
+                </div>
+                <div class="form-group col-md-1">
+                    <div style="float: right; display:inline-block">
+                        <input class="btn btn-primary" name="submitButton" id="btnSave" value="Save" type="button"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr/>
+<div class="row" style="margin-top:32px; margin-bottom:32px">
+    <div class="col-lg-3">
+        <div class="input-group">
+            <input id="inputSearch" name="inputSearch" type="text" class="form-control" placeholder="Search for...">
+            <div class="input-group-append">
+                <button id="searchButton" class="btn btn-outline-primary" type="button">Go!</button>
+            </div>
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+<table id="tableStudent" class="table table-bordered table-striped table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th align="left" scope="col" class="productth">ID</th>
+            <th align="left" scope="col" class="productth">Student Name</th>
+            <th align="left" scope="col" class="productth">Student Lastname</th>
+            <th align="left" scope="col" class="productth">Student Address</th>
+            <th align="left" scope="col" class="productth">Student Code</th>
+            <th align="left" scope="col" class="productth">Edition</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            if (item.IsActive)
+            {
+                <tr>
+                    <td align="left" class="prtoducttd">@item.StudentId</td>
+                    <td align="left" class="prtoducttd">@item.StudentName</td>
+                    <td align="left" class="prtoducttd">@item.StudentLastname</td>
+                    <td align="left" class="prtoducttd">@item.StudentAddress</td>
+                    <td align="left" class="prtoducttd">@item.StudentCode</td>
+                    <td align="left" class="prtoducttd">
+                        <a class="btn btn-warning btnEdit text-white mx-1">
+                            <i class="fas fa-edit"></i> Edit
+                        </a>
+                        <a class="btn btn-danger btnDelete text-white mx-1">
+                            <i class="fas fa-trash-alt"></i> Delete
+                        </a>
+                    </td>
+
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<!-- The modal -->
+<div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Modal Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="inputId"/>
+                <div class="form-group">
+                    <label>Student code:</label>
+                    <input class="form-control" type="text" id="inputCode" placeholder="student code" readonly/>
+                </div>
+                <div class="form-group">
+                        <label>Student Name:</label>
+                    <input class="form-control" type="text" id="inputName" placeholder="student name"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Student Last name:</label>
+                        <input class="form-control" type="text" id="inputLastName" placeholder="student lastname"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Student address:</label>
+                        <input class="form-control" type="text" id="inputAddress" placeholder="student address"/>
+                    </div>
+                    
+                <div class="form-group">
+                    <button id="btnUpdateStudent" class="btn btn-outline-success">Update</button>
+                </div>
+            </div>@*
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>*@
+        </div>
+    </div>
+</div>
+
+@*
+<!--Alerts-->
+<div id="success-alert" class="alert alert-success" role="alert">
+    The student data was successfully update!
+</div>
+<div id="error-alert" class="alert alert-danger" role="alert">
+  The student cannot be updated!
+</div>*@
+@section Scripts
+{
+    <script type="text/javascript">
+        $(function () {
+            //LoadData();
+            $("#btnUpdateStudent").click(function() {
+              let student = {
+                  "studentId": parseInt($("#inputId").val()),
+                  "studentName":$("#inputName").val(),
+                  "studentLastname":$("#inputLastName").val(),
+                  "studentCode":parseInt($("#inputCode").val()),
+                  "studentAddress":$("#inputAddress").val()
+              };
+              console.log("el estudiante a actualizar");
+              console.log(student);
+              $.ajax({
+                type: "POST",
+                url: "@Url.Action("UpdateStudent")",
+                data: JSON.stringify(student),
+                dataType: "json",
+                contentType:"application/json; charset=utf-8",
+                success: function(response) {
+                  console.log(response);
+                  if (response){
+                      $("#success-alert").alert();
+                      LoadData();
+                      $("#flipFlop").modal('hide');
+                  }
+                  $("#error-alert").alert();
+                },
+                error: function() {
+                    $("#error-alert").alert();
+                  alert("no se pudo actualizar al estudiante")
+                }
+              })
+            });
+            $(document).on("click",".deleteBtn",function() {
+              var rowSelected = $(this).closest('tr').index();
+              console.log(rowSelected);
+              var array = [];
+              $("#tableStudent tr").find("td:first-child").each(function(data) {
+                array.push($(this).html());
+              });
+              console.log("la entidad seleccionada"+array[rowSelected]);
+              $.ajax({
+              type:"DELETE",
+              url: "@Url.Action("DeleteStudent")",
+              data: JSON.stringify(array[rowSelected]),
+              dataType: "json",
+              contentType:"application/json; charset=utf-8",
+              success: function() {
+                  
+              },
+              error: function() {
+                  alert("no se pudo borrar el usuario");
+              }
+              })
+            });
+            $(document).on("click",".btnEdit",function () {
+                $("#flipFlop").modal('show');
+                var row = $(this).closest('tr').index();
+                console.log(row);
+                //console.log(Model[0]);
+                var array = [];
+                $("#tableStudent tr").find("td:first-child").each(function (data) {
+                   // console.log($(this).html())
+                    array.push($(this).html());
+                });
+                console.log("la entidad id"+array[row]);
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("GetStudentById")",
+                    data: JSON.stringify(array[row]),
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (response) {
+                        console.log("gg");
+                        console.log(response);
+                        $("#inputId").val(response.studentId);
+                        $("#inputName").val(response.studentName);
+                        $("#inputLastName").val(response.studentLastname);
+                        $("#inputCode").val(response.studentCode);
+                        $("#inputAddress").val(response.studentAddress);
+                    },
+                    error: function () {
+                        alert("No se encontro al estudiante");
+                    }
+                });
+                return false;
+            });
+
+            $("#searchButton").click(function () {
+                var studentParam = $("#inputSearch").val();
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("FilterByNameOrLastName")",
+                    data: JSON.stringify(studentParam),
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (response) {
+                        $("#tableStudent tbody tr").remove();
+                        console.log(response);
+                        var items = '';
+                    $.each(response, function (i, item) {
+                        var rows = "<tr>"
+                            + "<td class='prtoducttd'>" + item.studentId + "</td>"
+                            + "<td class='prtoducttd'>" + item.studentName + "</td>"
+                            + "<td class='prtoducttd'>" + item.studentLastname + "</td>"
+                            + "<td class='prtoducttd'>" + item.studentAddress + "</td>"
+                            + "<td class='prtoducttd'>" + item.studentCode + "</td>"
+                            + "<td class='prtoducttd'>" +
+                             "<a class='btn btn-warning btnEdit text-white mx-1'>" +
+                              "<i class='fas fa-edit'></i> Edit" +
+                               "</a>" +
+                                "<a class='btn btn-danger btnDelete text-white mx-1'>" +
+                                 "<i class='fas fa-trash-alt'></i> Delete</a>" +
+                                  "</td>"
+                                  +"</tr>";
+                        $("#tableStudent tbody").append(rows);
+                    });
+                    },
+                    error: function () {
+                        alert("No se encontro al estudiante");
+                    }
+                });
+                return false;
+            });
+
+            $("#btnSave").click(function () {
+                let student = {
+                    "studentName": $("#StudentName").val(),
+                    "studentLastname": $("#StudentLastName").val(),
+                    "studentCode": $("#StudentCode").val(),
+                    "studentAddress": $("#StudentAddress").val()
+                };
+                console.log(student);
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("CreateStudent")',
+                    data: "{student:"+JSON.stringify(student)+"}",
+                    dataType: "json",
+                    traditional: true,
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        console.log(data);
+                        LoadData();
+                    },
+                    error: function () {
+                        alert("Error while inserting data");
+                    }
+                });
+                return false;
+            });
+
+        });
+
+        function LoadData() {
+            $("#tableStudent tbody tr").remove();
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("GetStudents")',
+                dataType: 'json',
+                success: function (data) {
+                    var items = '';
+                    $.each(data, function (i, item) {
+                        var rows = "<tr>"
+                                                    + "<td class='prtoducttd'>" + item.studentId + "</td>"
+                                                    + "<td class='prtoducttd'>" + item.studentName + "</td>"
+                                                    + "<td class='prtoducttd'>" + item.studentLastname + "</td>"
+                                                    + "<td class='prtoducttd'>" + item.studentAddress + "</td>"
+                                                    + "<td class='prtoducttd'>" + item.studentCode + "</td>"
+                                                    + "<td class='prtoducttd'>" +
+                                                     "<a class='btn btn-warning btnEdit text-white mx-1'>" +
+                                                      "<i class='fas fa-edit'></i> Edit" +
+                                                       "</a>" +
+                                                        "<a class='btn btn-danger btnDelete text-white mx-1'>" +
+                                                         "<i class='fas fa-trash-alt'></i> Delete</a>" +
+                                                          "</td>"
+                                                          +"</tr>";
+                        $("#tableStudent tbody").append(rows);
+                    });
+                },
+                error: function (ex) {
+                    var r = jQuery.parseJSON(response.responseText);
+                    alert("Message:" + r.Message);
+                    alert("StackTrace:" + r, StackTrace);
+                    alert("ExceptionType:" + r.ExceptionType);
+                }
+            });
+            return false;
+        }
+    </script>
+}

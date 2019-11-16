@@ -1,0 +1,57 @@
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/appsettings.Development.json
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/appsettings.json
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Properties/launchSettings.json
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/REST Service
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/REST Service.deps.json
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/REST Service.runtimeconfig.json
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/REST Service.runtimeconfig.dev.json
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/REST Service.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/REST Service.pdb
+/home/kotoha/RiderProjects/Lab11/REST Service/obj/Debug/netcoreapp3.0/REST Service.csprojAssemblyReference.cache
+/home/kotoha/RiderProjects/Lab11/REST Service/obj/Debug/netcoreapp3.0/staticwebassets/REST Service.StaticWebAssets.Manifest.cache
+/home/kotoha/RiderProjects/Lab11/REST Service/obj/Debug/netcoreapp3.0/staticwebassets/REST Service.StaticWebAssets.xml
+/home/kotoha/RiderProjects/Lab11/REST Service/obj/Debug/netcoreapp3.0/REST Service.MvcApplicationPartsAssemblyInfo.cache
+/home/kotoha/RiderProjects/Lab11/REST Service/obj/Debug/netcoreapp3.0/REST Service.AssemblyInfoInputs.cache
+/home/kotoha/RiderProjects/Lab11/REST Service/obj/Debug/netcoreapp3.0/REST Service.AssemblyInfo.cs
+/home/kotoha/RiderProjects/Lab11/REST Service/obj/Debug/netcoreapp3.0/REST Service.RazorTargetAssemblyInfo.cache
+/home/kotoha/RiderProjects/Lab11/REST Service/obj/Debug/netcoreapp3.0/REST Service.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/obj/Debug/netcoreapp3.0/REST Service.pdb
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Microsoft.Practices.ServiceLocation.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/RestSharp.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Rocket.API.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Rocket.Core.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Rocket.EntityFrameworkCore.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Rocket.EntityFrameworkCore.InMemory.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/ICSharpCode.SharpZipLib.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Microsoft.Practices.Unity.Configuration.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Microsoft.Practices.Unity.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/obj/Debug/netcoreapp3.0/REST Service.csproj.CopyComplete
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Microsoft.Data.SqlClient.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Microsoft.Identity.Client.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/System.Configuration.ConfigurationManager.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/System.Runtime.Caching.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/System.Security.Cryptography.ProtectedData.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/runtimes/win-arm64/native/sni.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/runtimes/win-x64/native/sni.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/runtimes/win-x86/native/sni.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/AutoMapper.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Domain.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Infrastructure.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Service.dll
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Service.pdb
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Domain.pdb
+/home/kotoha/RiderProjects/Lab11/REST Service/bin/Debug/netcoreapp3.0/Infrastructure.pdb

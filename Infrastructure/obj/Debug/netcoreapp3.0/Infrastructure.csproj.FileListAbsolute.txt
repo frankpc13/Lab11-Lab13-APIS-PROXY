@@ -1,0 +1,13 @@
+/home/kotoha/RiderProjects/Lab11/Infrastructure/bin/Debug/netcoreapp3.0/Infrastructure.deps.json
+/home/kotoha/RiderProjects/Lab11/Infrastructure/bin/Debug/netcoreapp3.0/Infrastructure.dll
+/home/kotoha/RiderProjects/Lab11/Infrastructure/bin/Debug/netcoreapp3.0/Infrastructure.pdb
+/home/kotoha/RiderProjects/Lab11/Infrastructure/bin/Debug/netcoreapp3.0/Domain.dll
+/home/kotoha/RiderProjects/Lab11/Infrastructure/bin/Debug/netcoreapp3.0/Domain.pdb
+/home/kotoha/RiderProjects/Lab11/Infrastructure/obj/Debug/netcoreapp3.0/Infrastructure.csprojAssemblyReference.cache
+/home/kotoha/RiderProjects/Lab11/Infrastructure/obj/Debug/netcoreapp3.0/Infrastructure.AssemblyInfoInputs.cache
+/home/kotoha/RiderProjects/Lab11/Infrastructure/obj/Debug/netcoreapp3.0/Infrastructure.AssemblyInfo.cs
+/home/kotoha/RiderProjects/Lab11/Infrastructure/obj/Debug/netcoreapp3.0/Infrastructure.csproj.CopyComplete
+/home/kotoha/RiderProjects/Lab11/Infrastructure/obj/Debug/netcoreapp3.0/Infrastructure.dll
+/home/kotoha/RiderProjects/Lab11/Infrastructure/obj/Debug/netcoreapp3.0/Infrastructure.pdb
+/home/kotoha/RiderProjects/Lab11/Infrastructure/bin/Debug/netcoreapp3.0/Infrastructure.runtimeconfig.json
+/home/kotoha/RiderProjects/Lab11/Infrastructure/bin/Debug/netcoreapp3.0/Infrastructure.runtimeconfig.dev.json

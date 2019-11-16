@@ -1,0 +1,69 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/kotoha/RiderProjects/Lab11/REST Service/REST Service.csproj",
+    "projectName": "REST Service",
+    "projectPath": "/home/kotoha/RiderProjects/Lab11/REST Service/REST Service.csproj",
+    "outputPath": "/home/kotoha/RiderProjects/Lab11/REST Service/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp3.0"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "projectReferences": {
+          "/home/kotoha/RiderProjects/Lab11/Domain/Domain.csproj": {
+            "projectPath": "/home/kotoha/RiderProjects/Lab11/Domain/Domain.csproj"
+          },
+          "/home/kotoha/RiderProjects/Lab11/Service/Service.csproj": {
+            "projectPath": "/home/kotoha/RiderProjects/Lab11/Service/Service.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.0": {
+      "dependencies": {
+        "Microsoft.AspNetCore.Server.Kestrel": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[3.0.0, )"
+        },
+        "Microsoft.EntityFrameworkCore.Design": {
+          "target": "Package",
+          "version": "[3.0.0, )"
+        },
+        "Newtonsoft.Json": {
+          "target": "Package",
+          "version": "[12.0.3, )"
+        },
+        "Rocket.EntityFrameworkCore.InMemory": {
+          "target": "Package",
+          "version": "[5.0.0.26, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

@@ -1,0 +1,13 @@
+/home/kotoha/RiderProjects/Lab11/Service/bin/Debug/netcoreapp3.0/Service.deps.json
+/home/kotoha/RiderProjects/Lab11/Service/bin/Debug/netcoreapp3.0/Service.dll
+/home/kotoha/RiderProjects/Lab11/Service/bin/Debug/netcoreapp3.0/Service.pdb
+/home/kotoha/RiderProjects/Lab11/Service/bin/Debug/netcoreapp3.0/Domain.dll
+/home/kotoha/RiderProjects/Lab11/Service/bin/Debug/netcoreapp3.0/Infrastructure.dll
+/home/kotoha/RiderProjects/Lab11/Service/bin/Debug/netcoreapp3.0/Domain.pdb
+/home/kotoha/RiderProjects/Lab11/Service/bin/Debug/netcoreapp3.0/Infrastructure.pdb
+/home/kotoha/RiderProjects/Lab11/Service/obj/Debug/netcoreapp3.0/Service.csprojAssemblyReference.cache
+/home/kotoha/RiderProjects/Lab11/Service/obj/Debug/netcoreapp3.0/Service.AssemblyInfoInputs.cache
+/home/kotoha/RiderProjects/Lab11/Service/obj/Debug/netcoreapp3.0/Service.AssemblyInfo.cs
+/home/kotoha/RiderProjects/Lab11/Service/obj/Debug/netcoreapp3.0/Service.csproj.CopyComplete
+/home/kotoha/RiderProjects/Lab11/Service/obj/Debug/netcoreapp3.0/Service.dll
+/home/kotoha/RiderProjects/Lab11/Service/obj/Debug/netcoreapp3.0/Service.pdb

@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/kotoha/RiderProjects/Lab11/Lab11/Lab11.csproj": {}
+  },
+  "projects": {
+    "/home/kotoha/RiderProjects/Lab11/Lab11/Lab11.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kotoha/RiderProjects/Lab11/Lab11/Lab11.csproj",
+        "projectName": "Lab11",
+        "projectPath": "/home/kotoha/RiderProjects/Lab11/Lab11/Lab11.csproj",
+        "packagesPath": "/home/kotoha/.nuget/packages/",
+        "outputPath": "/home/kotoha/RiderProjects/Lab11/Lab11/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kotoha/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.DotNet.Watcher.Tools": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

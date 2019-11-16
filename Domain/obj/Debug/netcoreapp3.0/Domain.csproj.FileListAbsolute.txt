@@ -1,0 +1,8 @@
+/home/kotoha/RiderProjects/Lab11/Domain/bin/Debug/netcoreapp3.0/Domain.deps.json
+/home/kotoha/RiderProjects/Lab11/Domain/bin/Debug/netcoreapp3.0/Domain.dll
+/home/kotoha/RiderProjects/Lab11/Domain/bin/Debug/netcoreapp3.0/Domain.pdb
+/home/kotoha/RiderProjects/Lab11/Domain/obj/Debug/netcoreapp3.0/Domain.csprojAssemblyReference.cache
+/home/kotoha/RiderProjects/Lab11/Domain/obj/Debug/netcoreapp3.0/Domain.AssemblyInfoInputs.cache
+/home/kotoha/RiderProjects/Lab11/Domain/obj/Debug/netcoreapp3.0/Domain.AssemblyInfo.cs
+/home/kotoha/RiderProjects/Lab11/Domain/obj/Debug/netcoreapp3.0/Domain.dll
+/home/kotoha/RiderProjects/Lab11/Domain/obj/Debug/netcoreapp3.0/Domain.pdb
